@@ -37,7 +37,7 @@ public class InterfaceTests {
         Assert.assertTrue(farmer instanceof Botanist);
     }
 
-    //5, Te11sting if the class is implementing from this interface.(Rideable)
+    //5, Te1sting if the class is implementing from this interface.(Rideable)
     @Test
     public void testInterfaces5 (){
         Horse horse = new Horse();
