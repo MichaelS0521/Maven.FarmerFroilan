@@ -1,2 +1,9 @@
-package Abstract;public class Person {
+package Abstract;
+
+public class Person {
+
+    public Person() {
+
+    }
 }
+

@@ -1,2 +1,6 @@
-package concreteclass;public class Pilot {
+package concreteclass;
+
+import Abstract.Person;
+
+public class Pilot {
 }
