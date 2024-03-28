@@ -14,4 +14,8 @@ public class CropRow<Crop> {
     public boolean contains(Crop crop) {
         return crops.contains(crop);
     }
+
+    public int size() {
+        return crops.size();
+    }
 }
