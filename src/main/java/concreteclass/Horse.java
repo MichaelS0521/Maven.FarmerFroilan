@@ -1,6 +1,12 @@
 package concreteclass;
 
 import Abstract.Animal;
+import Interface.Rideable;
 
-public class Horse extends Animal {
+public class Horse extends Animal implements Rideable {
+
+    @Override
+    public boolean ride() {
+        return false;
+    }
 }
