@@ -17,6 +17,21 @@ import Interface.Edible;
         public void addFarmerToFarmHouseTest(){
             Person farmer = new Person() {
                 @Override
+                public void eat() {
+
+                }
+
+                @Override
+                public void mount() {
+
+                }
+
+                @Override
+                public void dismount() {
+
+                }
+
+                @Override
                 public void addFarmHouse(FarmHouse farmHouse) {
 
                 }
@@ -29,6 +44,21 @@ import Interface.Edible;
         @Test
         public void addPilotToFarmHouseTest(){
             Person pilot = new Person() {
+                @Override
+                public void eat() {
+
+                }
+
+                @Override
+                public void mount() {
+
+                }
+
+                @Override
+                public void dismount() {
+
+                }
+
                 @Override
                 public void addFarmHouse(FarmHouse farmHouse) {
 
@@ -44,11 +74,41 @@ import Interface.Edible;
         public void fieldSizeTest() {
             Person farmer = new Person() {
                 @Override
+                public void eat() {
+
+                }
+
+                @Override
+                public void mount() {
+
+                }
+
+                @Override
+                public void dismount() {
+
+                }
+
+                @Override
                 public void addFarmHouse(FarmHouse farmHouse) {
 
                 }
             };
             Person pilot = new Person() {
+                @Override
+                public void eat() {
+
+                }
+
+                @Override
+                public void mount() {
+
+                }
+
+                @Override
+                public void dismount() {
+
+                }
+
                 @Override
                 public void addFarmHouse(FarmHouse farmHouse) {
 
