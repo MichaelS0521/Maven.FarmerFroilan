@@ -1,6 +1,2 @@
-package concreteclass;
-
-import Abstract.Person;
-
-public class Farmer {
+package concreteclass;public class Farmer {
 }
