@@ -23,4 +23,8 @@ public abstract class Dwelling <T> {
     public int size() {
         return dwellers.size();
     }
+
+    public T get(int index) {
+        return dwellers.get(index);
+    }
 }

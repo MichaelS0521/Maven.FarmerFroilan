@@ -1,5 +1,7 @@
 package Interface;
 
-public interface Produce <T extends Edible> {
-    public boolean yield ();
+
+public interface Produce {
+    Edible yield();
+  
 }
