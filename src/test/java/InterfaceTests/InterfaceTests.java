@@ -37,7 +37,7 @@ public class InterfaceTests {
         Assert.assertTrue(tractor instanceof Harvest);
     }
 
-    //4, Testing if the class is implementing from this interface.(Botanist)
+
 
     @Test
     public void testInterfaces4(){
@@ -50,6 +50,10 @@ public class InterfaceTests {
     public void testInterfaces5 (){
         Horse horse = new Horse();
 
+
+
+     
+    //4, Testing if the class is implementing from this interface.(Botanist)
 
 //    @Test
 //    public void testInterfaces4(){
@@ -102,15 +106,15 @@ public class InterfaceTests {
         Assert.assertTrue(cropDuster instanceof Fertilize);
     }
 
-<<<<<<< HEAD
-=======
+
+
     //Testing if the class is extending from this abstract.(FarmVehicle)
     @Test
     public void testInterfaces11(){
         Tractor tractor = new Tractor();
         Assert.assertTrue(tractor instanceof FarmVehicle);
     }
->>>>>>> 0f4a46c4dd0499ecba8a5e19c7657f7c74a6522f
+
 
 
 }

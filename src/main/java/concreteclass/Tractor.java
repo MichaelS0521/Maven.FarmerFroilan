@@ -14,4 +14,5 @@ public class Tractor extends FarmVehicle implements Harvest  {
     public boolean harvestCrop() {
         return false;
     }
+
 }
