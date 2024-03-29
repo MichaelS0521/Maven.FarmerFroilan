@@ -7,4 +7,5 @@ public class Tractor implements Harvest {
     public boolean harvestCrop() {
         return false;
     }
+
 }

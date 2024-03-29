@@ -30,7 +30,7 @@ public class InterfaceTests {
         Assert.assertTrue(tractor instanceof Harvest);
     }
 
-    //4, Testing if the class is implementing from this interface.(Botanist)
+//    4, Testing if the class is implementing from this interface.(Botanist)
 //    @Test
 //    public void testInterfaces4(){
 //        Farmer farmer = new Farmer();

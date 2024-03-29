@@ -1,14 +1,16 @@
 package collections;
 
 import Abstract.Crop;
+import Interface.Botanist;
 import concreteclass.CornStalk;
 import concreteclass.TomatoPlant;
+import concreteclass.Wheat;
 import org.junit.Assert;
 import org.junit.Test;
 
 public class TestCropRow {
     @Test
-    public void addCropsToCropRowTest() {
+    public void cropRowContainsTest() {
         TomatoPlant tomatoPlant = new TomatoPlant();
         CornStalk cornStalk = new CornStalk();
         CropRow<Crop> cropRow = new CropRow<>();
@@ -20,37 +22,102 @@ public class TestCropRow {
     }
 
     @Test
-    public void cropRowContainsTomatoTest() {
+    public void cropRowAddTomatoTest() {
         TomatoPlant tomatoPlant = new TomatoPlant();
-        CropRow<Crop> cropRowTomato = new CropRow<>();
-        cropRowTomato.add(tomatoPlant);
+        CropRow<Crop> cropRowOne = new CropRow<>();
+        CropRow<Crop> cropRowTwo = new CropRow<>();
+        for (int i = 0; i < 12; i++) {
+            cropRowOne.add(tomatoPlant);
+            cropRowTwo.add(tomatoPlant);
+        }
 
+        int expectedRowOneSize = 12;
+        int actualRowOneSize = cropRowOne.size();
 
-        Assert.assertTrue(cropRowTomato.contains(tomatoPlant));
+        int expectedRowTwoSize = 12;
+        int actualRowOTwoSize = cropRowOne.size();
+
+        Assert.assertEquals(expectedRowOneSize, actualRowOneSize);
+        Assert.assertEquals(expectedRowTwoSize, actualRowOTwoSize);
     }
 
     @Test
-    public void cropRowContainsCornStalkTest() {
+    public void cropRowAddCornStalkTest() {
         CornStalk cornStalk = new CornStalk();
-        CropRow<Crop> cropRow = new CropRow<>();
-        cropRow.add(cornStalk);
+        CropRow<Crop> cropRowThree = new CropRow<>();
+        CropRow<Crop> cropRowFour = new CropRow<>();
+        for (int i = 0; i < 21; i++) {
+            cropRowThree.add(cornStalk);
+            cropRowFour.add(cornStalk);
+        }
 
-        Assert.assertTrue(cropRow.contains(cornStalk));
+        int expectedRowThreeSize = 21;
+        int actualRowThreeSize = cropRowThree.size();
+
+        int expectedRowFourSize = 21;
+        int actualRowFourSize = cropRowFour.size();
+
+        Assert.assertEquals(expectedRowThreeSize, actualRowThreeSize);
+        Assert.assertEquals(expectedRowFourSize, actualRowFourSize);
     }
 
     @Test
-    public void cornRowSizeTest() {
+    public void cropRowAddWheatTest() {
+        Wheat wheat = new Wheat();
+        CropRow<Crop> cropRowFive = new CropRow<>();
+        for (int i = 0; i < 10; i++) {
+            cropRowFive.add(wheat);
+        }
+
+        int expectedRowFiveSize = 10;
+        int actualRowFiveSize = cropRowFive.size();
+
+        Assert.assertEquals(expectedRowFiveSize, actualRowFiveSize);
+    }
+
+    @Test
+    public void cropRowSizeTest() {
         TomatoPlant tomatoPlant = new TomatoPlant();
         CornStalk cornStalk = new CornStalk();
-        CropRow<Crop> cropRow = new CropRow<>();
-        cropRow.add(tomatoPlant);
-        cropRow.add(tomatoPlant);
-        cropRow.add(cornStalk);
-        cropRow.add(cornStalk);
+        Wheat wheat = new Wheat();
 
-        int expectedSize = 4;
-        int actualSize = cropRow.size();
+        CropRow<Crop> cropRowOne = new CropRow<>();
+        CropRow<Crop> cropRowTwo = new CropRow<>();
+        CropRow<Crop> cropRowThree = new CropRow<>();
+        CropRow<Crop> cropRowFour = new CropRow<>();
+        CropRow<Crop> cropRowFive = new CropRow<>();
 
-        Assert.assertEquals(expectedSize, actualSize);
+        for (int i = 0; i < 12; i++) {
+            cropRowOne.add(tomatoPlant);
+            cropRowTwo.add(tomatoPlant);
+        }
+        for (int i = 0; i < 21; i++) {
+            cropRowThree.add(cornStalk);
+            cropRowFour.add(cornStalk);
+        }
+        for (int i = 0; i < 10; i++) {
+            cropRowFive.add(wheat);
+        }
+
+        int expectedRowOneSize = 12;
+        int actualRowOneSize = cropRowOne.size();
+
+        int expectedRowTwoSize = 12;
+        int actualRowOTwoSize = cropRowOne.size();
+
+        int expectedRowThreeSize = 21;
+        int actualRowThreeSize = cropRowThree.size();
+
+        int expectedRowFourSize = 21;
+        int actualRowFourSize = cropRowFour.size();
+
+        int expectedRowFiveSize = 10;
+        int actualRowFiveSize = cropRowFive.size();
+
+        Assert.assertEquals(expectedRowOneSize, actualRowOneSize);
+        Assert.assertEquals(expectedRowTwoSize, actualRowOTwoSize);
+        Assert.assertEquals(expectedRowThreeSize, actualRowThreeSize);
+        Assert.assertEquals(expectedRowFourSize, actualRowFourSize);
+        Assert.assertEquals(expectedRowFiveSize, actualRowFiveSize);
     }
 }
