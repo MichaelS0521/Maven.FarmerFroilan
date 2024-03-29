@@ -1,5 +1,8 @@
 package InterfaceTests;
 
+
+import Abstract.FarmVehicle;
+
 import Interface.*;
 import concreteclass.*;
 import org.junit.Assert;
@@ -19,7 +22,11 @@ public class InterfaceTests {
 
     @Test
     public void testInterfaces2(){
+
         Chicken chicken = new Chicken();
+
+        Chicken chicken = new Chicken("pecan");
+
         Assert.assertTrue(chicken instanceof Produce);
     }
 
@@ -31,6 +38,7 @@ public class InterfaceTests {
     }
 
     //4, Testing if the class is implementing from this interface.(Botanist)
+
     @Test
     public void testInterfaces4(){
         Farmer farmer = new Farmer();
@@ -41,6 +49,21 @@ public class InterfaceTests {
     @Test
     public void testInterfaces5 (){
         Horse horse = new Horse();
+
+
+//    @Test
+//    public void testInterfaces4(){
+//        FarmerTest farmer = new FarmerTest();
+//        Assert.assertTrue(farmer instanceof Botanist);
+//    }
+
+    //5, Te111sting if the class is implementing from this interface.(Rideable)
+    @Test
+    public void testInterfaces5 (){
+
+        Horse horse = new Horse("mimi");
+
+
         Assert.assertTrue(horse instanceof Rideable);
     }
 
@@ -79,6 +102,15 @@ public class InterfaceTests {
         Assert.assertTrue(cropDuster instanceof Fertilize);
     }
 
+<<<<<<< HEAD
+=======
+    //Testing if the class is extending from this abstract.(FarmVehicle)
+    @Test
+    public void testInterfaces11(){
+        Tractor tractor = new Tractor();
+        Assert.assertTrue(tractor instanceof FarmVehicle);
+    }
+>>>>>>> 0f4a46c4dd0499ecba8a5e19c7657f7c74a6522f
 
 
 }
