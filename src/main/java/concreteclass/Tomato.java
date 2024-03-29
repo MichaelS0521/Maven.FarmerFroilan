@@ -4,7 +4,7 @@ import Interface.Edible;
 
 public class Tomato implements Edible {
     @Override
-    public boolean edible() {
+    public boolean isEaten() {
         return false;
     }
 }
