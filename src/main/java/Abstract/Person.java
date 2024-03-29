@@ -1,2 +1,35 @@
-package Abstract;public class Person {
+package Abstract;
+
+import collections.FarmHouse;
+import java.util.ArrayList;
+import java.util.List;
+
+public abstract class Person {
+    private List<FarmHouse> farmHouse;
+
+    public Person(String name, List<FarmHouse> farmHouse) {
+
+        this.farmHouse = farmHouse;
+    }
+
+    public Person(List<FarmHouse> farmHouse) {
+
+        this.farmHouse = farmHouse;
+    }
+    public Person() {
+    }
+
+    public abstract void eat();
+
+    public abstract void mount();
+
+    public abstract void dismount();
+
+    public abstract void addFarmHouse(FarmHouse farmHouse);
+
+    public List<FarmHouse> getFarmHouse() {
+
+        return farmHouse;
+    }
 }
+
