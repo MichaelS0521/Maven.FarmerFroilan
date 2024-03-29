@@ -1,5 +1,6 @@
 package collections;
 
+import concreteclass.Horse;
 import concreteclass.HorseTest;
 
 
@@ -10,7 +11,11 @@ import org.junit.Test;
 public class TestStable {
     @Test
     public void addHorseToStableTest() {
-        HorseTest bojack = new HorseTest();
+
+
+
+        Horse bojack = new Horse("mimi");
+
         Stables stable = new Stables();
         stable.add(bojack);
 
@@ -21,7 +26,7 @@ public class TestStable {
 
     @Test
     public void constructorTest() {
-        Stable stable = new Stable();
+        Stables stable = new Stables();
         Assert.assertNotNull(stable);
     }
 

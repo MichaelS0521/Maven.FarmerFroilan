@@ -24,7 +24,7 @@ public class HorseTest {
         Assert.assertTrue(horse.hasRider);
     }
 
-    //
+    //git
     @Test
     public void eatTest(){
         Horse horse = new Horse();

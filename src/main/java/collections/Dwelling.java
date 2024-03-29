@@ -19,4 +19,8 @@ public abstract class Dwelling <T> {
     public boolean contains(T Animal) {
         return dwellers.contains(Animal);
     }
+
+    public int size() {
+        return dwellers.size();
+    }
 }

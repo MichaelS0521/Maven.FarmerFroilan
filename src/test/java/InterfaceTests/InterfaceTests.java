@@ -31,6 +31,7 @@ public class InterfaceTests {
     }
 
     //4, Testing if the class is implementing from this interface.(Botanist)
+
     @Test
     public void testInterfaces4(){
         FarmerTest farmer = new FarmerTest();
@@ -40,7 +41,9 @@ public class InterfaceTests {
     //5, Te111sting if the class is implementing from this interface.(Rideable)
     @Test
     public void testInterfaces5 (){
-        HorseTest horse = new HorseTest();
+
+        Horse horse = new Horse("mimi");
+
         Assert.assertTrue(horse instanceof Rideable);
     }
 
