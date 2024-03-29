@@ -17,7 +17,7 @@ public abstract class Person {
     }
 
     public Person() {
-
+//Yeah
     }
 
     public abstract void addFarmHouse(FarmHouse farmHouse);
