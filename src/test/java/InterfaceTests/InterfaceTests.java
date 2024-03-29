@@ -20,7 +20,7 @@ public class InterfaceTests {
 
     @Test
     public void testInterfaces2(){
-        Chicken chicken = new Chicken();
+        Chicken chicken = new Chicken("pecan");
         Assert.assertTrue(chicken instanceof Produce);
     }
 
