@@ -4,6 +4,11 @@ import Interface.Edible;
 
 public class Egg implements Edible {
 
+    @Override
+    public boolean edible() {
+        return false;
+
+
     private boolean isEaten = false;
 
     @Override
@@ -15,5 +20,9 @@ public class Egg implements Edible {
 
     public void setEaten(boolean eaten) {
         isEaten = eaten;
+
+
+    public boolean isEaten() {
+        return false;
     }
 }
