@@ -1,8 +1,10 @@
 package Abstract;
 
+import Interface.Rideable;
+
 import java.util.ArrayList;
 
-public class FarmVehicle {
+public class FarmVehicle implements Rideable {
 
         ArrayList<Object> farmVehicle = new ArrayList<>();
 
@@ -12,5 +14,11 @@ public class FarmVehicle {
         public boolean contains (Object vehicle){
             return farmVehicle.contains(vehicle);
         }
+
+
+    @Override
+    public boolean ride() {
+        return false;
     }
+}
 
