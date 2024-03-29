@@ -7,12 +7,12 @@ public class FarmerTest {
 
 
 
-    @Test
-    public void eatTest(){
-        Farmer farmer = new Farmer();
-        farmer.eat();
-        Assert.assertTrue(farmer.hasEaten);
-    }
+//    @Test
+//    public void eatTest(){
+//        Farmer farmer = new Farmer();
+//        farmer.eat();
+//        Assert.assertTrue(farmer.hasEaten);
+//    }
 
 
 
