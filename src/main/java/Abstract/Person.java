@@ -19,6 +19,12 @@ public abstract class Person {
     public Person() {
     }
 
+    public abstract void eat();
+
+    public abstract void mount();
+
+    public abstract void dismount();
+
     public abstract void addFarmHouse(FarmHouse farmHouse);
 
     public List<FarmHouse> getFarmHouse() {

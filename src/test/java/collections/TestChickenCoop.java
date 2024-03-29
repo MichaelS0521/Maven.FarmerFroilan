@@ -18,10 +18,6 @@ public class TestChickenCoop {
     @Test
     public void sizeOfeChickenCoopTest() {
 
-        Chicken perdue = new Chicken();
-        Chicken perdue2 = new Chicken();
-        Chicken perdue3 = new Chicken();
-
         Chicken perdue = new Chicken("pecan");
         Chicken perdue2 = new Chicken("pecan");
         Chicken perdue3 = new Chicken("pecan");
