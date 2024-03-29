@@ -3,6 +3,12 @@ package concreteclass;
 import Interface.Edible;
 
 public class EarCorn implements Edible {
+
+    @Override
+    public boolean edible() {
+        return false;
+    }
+
     private boolean isEaten = false;
 
     @Override
@@ -14,4 +20,5 @@ public class EarCorn implements Edible {
     public void setEaten(boolean eaten) {
 
     }
+
 }
