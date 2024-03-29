@@ -2,6 +2,7 @@ package collections;
 
 import com.beust.ah.A;
 import concreteclass.Horse;
+import concreteclass.HorseTest;
 
 
 
@@ -13,12 +14,17 @@ import java.util.List;
 public class TestStable {
     @Test
     public void addHorseToStableTest() {
+
+
+
         Horse bojack = new Horse("mimi");
+
         Stables stable = new Stables();
         stable.add(bojack);
 
         Assert.assertTrue(stable.contains(bojack));
     }
+
 
     @Test
     public void horseInstanceReturn() {
@@ -65,6 +71,14 @@ public class TestStable {
 
         Assert.assertTrue(horses.contains(sankey));
 
+
+
+
+
+    @Test
+    public void constructorTest() {
+        Stables stable = new Stables();
+        Assert.assertNotNull(stable);
 
     }
 

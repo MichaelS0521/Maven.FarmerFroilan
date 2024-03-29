@@ -5,6 +5,7 @@ import Interface.Edible;
 import Interface.Produce;
 
 public class Chicken extends Animal implements Produce {
+
     private Egg egg = new Egg();
     private boolean isFertilized = false;
 
@@ -24,5 +25,15 @@ if (!isFertilized()) {
     return egg;
 }
 return null;
+
+    @Override
+    public Edible yield() {
+        return null;
+    }
+
+    @Override
+    public void eat() {
+
+
     }
 }

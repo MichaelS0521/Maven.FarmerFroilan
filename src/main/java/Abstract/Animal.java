@@ -1,6 +1,9 @@
 package Abstract;
 
-public abstract class Animal {
+import Interface.Eater;
+import Interface.Noisemaker;
+
+public abstract class Animal implements Eater, Noisemaker {
     String name;
 
     public Animal() {

@@ -12,7 +12,12 @@ public class Egg implements Edible {
     }
 
     @Override
+
     public void setEaten(boolean eaten) {
         isEaten = eaten;
+
+    public boolean isEaten() {
+        return false;
+
     }
 }
