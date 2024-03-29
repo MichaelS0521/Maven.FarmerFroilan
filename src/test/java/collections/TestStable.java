@@ -70,7 +70,7 @@ public class TestStable {
         List<Horse> horses = stable.getDwellers();
 
         Assert.assertTrue(horses.contains(sankey));
-
+    }
 
 
 

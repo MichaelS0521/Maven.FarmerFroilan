@@ -15,9 +15,5 @@ public class Egg implements Edible {
 
     public void setEaten(boolean eaten) {
         isEaten = eaten;
-
-    public boolean isEaten() {
-        return false;
-
     }
 }
