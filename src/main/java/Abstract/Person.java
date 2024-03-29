@@ -16,6 +16,10 @@ public abstract class Person {
         this.farmHouse = farmHouse;
     }
 
+    public void print(){
+        System.out.println("ffhg");
+    }
+
     public Person() {
 //Yeah
     }
