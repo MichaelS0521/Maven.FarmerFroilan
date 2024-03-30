@@ -30,6 +30,7 @@ public class Farmer extends Person implements Botanist, Rider {
     }
 
     public void eat(Edible edible) {
+        hasEaten = true;
     }
 }
 

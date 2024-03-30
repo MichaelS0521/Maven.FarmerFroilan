@@ -1,21 +1,22 @@
 package collections;
 
+import concreteclass.CropDuster;
+
 import java.util.ArrayList;
 import java.util.List;
 
-public class CropRow<Crop> {
-    List<Crop> crops = new ArrayList<Crop>();
+public class CropRow<Crop> extends ArrayList<Crop>{
 
 
-    public void add(Crop crop) {
-        crops.add(crop);
+
+    public boolean hasBeenFertilized() {
+        return true;
     }
 
-    public boolean contains(Crop crop) {
-        return crops.contains(crop);
-    }
-
-    public int size() {
-        return crops.size();
-    }
+//    public boolean cropRowsHaveBeenFertilized () {
+//        if (hasBeenFertilized() == false){
+//            CropDuster
+//        }
+//        return false;
+//    }
 }

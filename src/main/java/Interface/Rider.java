@@ -1,6 +1,6 @@
 package Interface;
 
-public interface Rider {
+public interface Rider { //generic
 
     void mount();
 

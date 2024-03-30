@@ -1,5 +1,5 @@
 package Interface;
 
-public interface Rideable {
+public interface Rideable { //generic
     boolean ride();
 }
