@@ -24,11 +24,6 @@ return true;
 
     }
 
-    @Override
-    public void addFarmHouse(FarmHouse farmHouse) {
-
-    }
-
     public void eat(Edible edible) {
         hasEaten = true;
     }

@@ -21,7 +21,12 @@ public class PilotTest {
     }
 
 
+    @Test
+    public void flyTest(){
+        Pilot Foilanda = new Pilot();
 
+        Assert.assertTrue(Foilanda.fly());
+    }
 
 
 
