@@ -2,6 +2,5 @@ package concreteclass;
 
 import Abstract.Crop;
 
-public class CornStalk extends Crop {
-
+public class Wheat extends Crop {
 }
