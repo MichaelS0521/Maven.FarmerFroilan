@@ -1,5 +1,6 @@
 package Abstract;
 
+import Interface.Edible;
 import collections.FarmHouse;
 import java.util.ArrayList;
 import java.util.List;
@@ -7,19 +8,6 @@ import java.util.List;
 public abstract class Person {
     private List<FarmHouse> farmHouse;
 
-    public Person(String name, List<FarmHouse> farmHouse) {
-
-        this.farmHouse = farmHouse;
-    }
-
-    public Person(List<FarmHouse> farmHouse) {
-
-        this.farmHouse = farmHouse;
-    }
-    public Person() {
-    }
-
-    public abstract void eat();
 
     public abstract void mount();
 

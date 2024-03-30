@@ -1,8 +1,11 @@
 package Interface;
 
+import Abstract.Crop;
+import collections.CropRow;
+
 public interface Harvest {
 
-    public boolean harvestCrop(String[] cropRow);
+    boolean harvestCrop(CropRow<Crop> cropRow);
 
 
 

@@ -28,7 +28,8 @@ public class HorseTest {
     @Test
     public void eatTest(){
         Horse horse = new Horse("Horse");
-        horse.eat();
+        Tomato tomato = new Tomato();
+        horse.eat(tomato);
         Assert.assertTrue(horse.hasEaten);
     }
 

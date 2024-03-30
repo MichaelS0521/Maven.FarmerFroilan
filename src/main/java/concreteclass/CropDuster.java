@@ -1,17 +1,27 @@
 package concreteclass;
 
+import Abstract.Crop;
 import Interface.Aircraft;
 import Interface.Fertilize;
+import collections.CropRow;
 
-public class CropDuster implements Aircraft, Fertilize {
+public class CropDuster extends CropRow implements Aircraft {
 
     @Override
     public boolean fly() {
-        return false;
+        return true;
     }
 
-    @Override
-    public boolean hasBeenFertilized() {
+    public void fertilizeCropRows() {
+        if (hasBeenFertilized() == false) {
+
+        }
+    }
+
+    public void fertilize(CropRow<Crop> cropRowOne) {
+    }
+
+    public boolean hasPilot() {
         return false;
     }
 }

@@ -6,8 +6,6 @@ import java.util.ArrayList;
 
 
 public class FarmVehicle implements Rideable {
-  
-    public boolean hasRider = false;
 
         ArrayList<Object> farmVehicle = new ArrayList<>();
 
@@ -26,6 +24,9 @@ public class FarmVehicle implements Rideable {
     public String makeNoise() {
             return "Noise";
 
+    }
+    public boolean hasRider() {
+          return false;
     }
 
 }

@@ -2,7 +2,7 @@ package Interface;
 
 public interface Eater {
 
-    void eat ();
+    void eat (Edible food);
 
 
 
