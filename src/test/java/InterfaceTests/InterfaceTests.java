@@ -14,7 +14,7 @@ public class InterfaceTests {
     //1, Testing if the class is implementing from this interface. (AirCraft)
     @Test
     public void testInterfaces1(){
-        CropDusterTest cropDuster = new CropDusterTest();
+        CropDuster cropDuster = new CropDuster();
         Assert.assertTrue(cropDuster instanceof Aircraft);
     }
 
@@ -80,6 +80,15 @@ public class InterfaceTests {
     public void testInterfaces9(){
         Tractor tractor = new Tractor();
         Assert.assertTrue(tractor instanceof FarmVehicle);
+    }
+
+
+    @Test
+    public void testInterfaces10(){
+
+        Egg egg = new Egg();
+
+        Assert.assertTrue(egg instanceof Edible);
     }
 
 

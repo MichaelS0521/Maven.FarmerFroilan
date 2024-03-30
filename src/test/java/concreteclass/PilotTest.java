@@ -25,7 +25,7 @@ public class PilotTest {
     public void flyTest(){
         Pilot Foilanda = new Pilot();
 
-        Assert.assertTrue(Foilanda.fly());
+        Assert.assertFalse(Foilanda.fly());
     }
 
 

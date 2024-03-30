@@ -7,6 +7,7 @@ import Interface.Produce;
 
 public class Chicken extends Animal implements Produce {
 
+    public boolean hasEaten = false;
     private Egg egg = new Egg();
     private boolean isFertilized = false;
 
@@ -35,7 +36,7 @@ public class Chicken extends Animal implements Produce {
 
     @Override
     public void eat(Edible food) {
-
+        hasEaten = true;
 
     }
 
