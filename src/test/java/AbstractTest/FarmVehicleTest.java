@@ -1,11 +1,8 @@
 package AbstractTest;
 
-import Abstract.Crop;
 import Abstract.FarmVehicle;
-import Interface.Rideable;
 import Interface.Rider;
-import concreteclass.CropDuster;
-import concreteclass.Pilot;
+import concreteclass.CropDusterTest;
 import concreteclass.Tractor;
 import org.testng.Assert;
 import org.testng.annotations.Test;
@@ -25,7 +22,7 @@ public class FarmVehicleTest {
         //ability to add a cropduster to farm vehicle test
         @Test
         public void addCropDusterToFarmVehicleTest(){
-            CropDuster cropduster = new CropDuster();
+            CropDusterTest cropduster = new CropDusterTest();
             FarmVehicle farmVehicle = new FarmVehicle();
             farmVehicle.add(cropduster);
 

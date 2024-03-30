@@ -12,11 +12,6 @@ public class CropDuster extends CropRow implements Aircraft {
         return true;
     }
 
-    public void fertilizeCropRows() {
-        if (hasBeenFertilized() == false) {
-
-        }
-    }
 
     public void fertilize(CropRow<Crop> cropRowOne) {
     }
