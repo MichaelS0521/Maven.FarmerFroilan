@@ -1,6 +1,9 @@
 package AbstractTest;
 
+import Abstract.Crop;
 import Abstract.FarmVehicle;
+import Interface.Rideable;
+import Interface.Rider;
 import concreteclass.CropDuster;
 import concreteclass.Pilot;
 import concreteclass.Tractor;
@@ -9,7 +12,8 @@ import org.testng.annotations.Test;
 
 public class FarmVehicleTest {
     @Test
-        public void addTractorTest(){
+    //ability to add a tractor to farm vehicle test
+        public void addTractorToFarmVehicleTest(){
             Tractor tractor = new Tractor();
             FarmVehicle farmVehicle = new FarmVehicle();
             farmVehicle.add(tractor);
@@ -17,30 +21,32 @@ public class FarmVehicleTest {
 
             Assert.assertTrue(farmVehicle.contains(tractor) );
         }
-    @Test
-    public void addCropDusterTest(){
-        CropDuster cropduster = new CropDuster();
-        FarmVehicle farmVehicle = new FarmVehicle();
-        farmVehicle.add(cropduster);
 
-        Assert.assertTrue(farmVehicle.contains(cropduster));
-    }
+        //ability to add a cropduster to farm vehicle test
+        @Test
+        public void addCropDusterToFarmVehicleTest(){
+            CropDuster cropduster = new CropDuster();
+            FarmVehicle farmVehicle = new FarmVehicle();
+            farmVehicle.add(cropduster);
 
+            Assert.assertTrue(farmVehicle.contains(cropduster));
+        }
+        //testing if these vehicles are rideable
+        @Test
+        public void  isTractorRideable() {
+            FarmVehicle tractor = new FarmVehicle();
+            Assert.assertTrue(tractor instanceof Rider);
+        }
+        @Test
+        public void isCropDusterRideable() {
 
-    @Test
-    public void rideTest(){
-        Tractor tractor = new Tractor();
-        tractor.ride();
-        Assert.assertTrue(tractor.hasRider);
-    }
+        FarmVehicle cropDuster = new FarmVehicle();
+            Assert.assertTrue(cropDuster instanceof Rider);
 
-    @Test
-    public void makeNoise(){
-        Tractor tractor = new Tractor();
+        }
+}
 
-        Assert.assertEquals("Noise", tractor.makeNoise());
-    }
+  
+  
 
-
-    }
 

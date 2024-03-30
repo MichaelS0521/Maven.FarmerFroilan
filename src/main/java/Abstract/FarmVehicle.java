@@ -1,9 +1,12 @@
 package Abstract;
 
+import Interface.Rideable;
+
 import java.util.ArrayList;
 
-public class FarmVehicle   {
-    public boolean hasRider = false;
+
+public class FarmVehicle implements Rideable {
+
         ArrayList<Object> farmVehicle = new ArrayList<>();
 
         public void add(Object vehicle){
@@ -13,13 +16,18 @@ public class FarmVehicle   {
             return farmVehicle.contains(vehicle);
         }
 
-    public void ride() {
+    @Override
+    public boolean ride() {
+        return false;
     }
 
     public String makeNoise() {
             return "Noise";
-    }
 
+    }
+    public boolean hasRider() {
+          return false;
+    }
 
 }
 

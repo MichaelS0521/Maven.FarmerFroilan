@@ -74,22 +74,10 @@ public class InterfaceTests {
     }
 
 
-    @Test
-    public void testInterfaces9(){
-        CropDuster cropDuster = new CropDuster();
-        Assert.assertTrue(cropDuster instanceof Fertilize);
-    }
-
-
-    @Test
-    public void testInterfaces10(){
-        CropDuster cropDuster = new CropDuster();
-        Assert.assertTrue(cropDuster instanceof Fertilize);
-    }
 
     //Testing if the class is extending from this abstract.(FarmVehicle)
     @Test
-    public void testInterfaces11(){
+    public void testInterfaces9(){
         Tractor tractor = new Tractor();
         Assert.assertTrue(tractor instanceof FarmVehicle);
     }

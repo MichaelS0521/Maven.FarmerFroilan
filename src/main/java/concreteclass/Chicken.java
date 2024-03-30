@@ -1,6 +1,7 @@
 package concreteclass;
 
 import Abstract.Animal;
+import Interface.Eater;
 import Interface.Edible;
 import Interface.Produce;
 
@@ -33,7 +34,7 @@ public class Chicken extends Animal implements Produce {
 //    }
 
     @Override
-    public void eat() {
+    public void eat(Edible food) {
 
 
     }

@@ -120,4 +120,24 @@ public class TestCropRow {
         Assert.assertEquals(expectedRowFourSize, actualRowFourSize);
         Assert.assertEquals(expectedRowFiveSize, actualRowFiveSize);
     }
+
+    @Test
+    public void cropRowsHaveBeenFertilized() {
+        TomatoPlant tomatoPlant = new TomatoPlant();
+        CropRow<Crop> cropRowOne = new CropRow<>();
+        CropRow<Crop> cropRowTwo = new CropRow<>();
+        boolean expectedCropRowsFertilized = false;
+        for (int i = 0; i < 12; i++) {
+            cropRowOne.add(tomatoPlant);
+            cropRowTwo.add(tomatoPlant);
+        }
+        cropRowOne.hasBeenFertilized();
+        cropRowTwo.hasBeenFertilized();
+
+        if (cropRowOne.hasBeenFertilized() && cropRowTwo.hasBeenFertilized()){
+            expectedCropRowsFertilized = true;
+        }
+
+        Assert.assertTrue(expectedCropRowsFertilized);
+    }
 }

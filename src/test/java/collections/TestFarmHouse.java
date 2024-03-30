@@ -1,5 +1,6 @@
 package collections;
 import Abstract.Person;
+import concreteclass.Farmer;
 import org.junit.Assert;
 import org.junit.Test;
 import static collections.FarmHouse.farmHouse;
@@ -15,27 +16,8 @@ import Interface.Edible;
     public class TestFarmHouse {
         @Test
         public void addFarmerToFarmHouseTest(){
-            Person farmer = new Person() {
-                @Override
-                public void eat() {
+           Farmer farmer = new Farmer();
 
-                }
-
-                @Override
-                public void mount() {
-
-                }
-
-                @Override
-                public void dismount() {
-
-                }
-
-                @Override
-                public void addFarmHouse(FarmHouse farmHouse) {
-
-                }
-            };
             FarmHouse.add(farmer);
 
             Assert.assertTrue(FarmHouse.contains(farmer));
@@ -43,77 +25,17 @@ import Interface.Edible;
 
         @Test
         public void addPilotToFarmHouseTest(){
-            Person pilot = new Person() {
-                @Override
-                public void eat() {
-
-                }
-
-                @Override
-                public void mount() {
-
-                }
-
-                @Override
-                public void dismount() {
-
-                }
-
-                @Override
-                public void addFarmHouse(FarmHouse farmHouse) {
-
-                }
-            };
+            Pilot pilot = new Pilot();
             FarmHouse farmHouse = new FarmHouse();
-            FarmHouse.add(pilot);
+            farmHouse.add(pilot);
 
-            Assert.assertTrue(FarmHouse.contains(pilot));
+            Assert.assertTrue(farmHouse.contains(pilot));
         }
 
         @Test
         public void fieldSizeTest() {
-            Person farmer = new Person() {
-                @Override
-                public void eat() {
-
-                }
-
-                @Override
-                public void mount() {
-
-                }
-
-                @Override
-                public void dismount() {
-
-                }
-
-                @Override
-                public void addFarmHouse(FarmHouse farmHouse) {
-
-                }
-            };
-            Person pilot = new Person() {
-                @Override
-                public void eat() {
-
-                }
-
-                @Override
-                public void mount() {
-
-                }
-
-                @Override
-                public void dismount() {
-
-                }
-
-                @Override
-                public void addFarmHouse(FarmHouse farmHouse) {
-
-                }
-            };
+            Farmer farmer = new Farmer();
+            Pilot pilot = new Pilot();
             FarmField farmField = new FarmField();
             farmField.add(farmer);
             farmField.add(pilot);
