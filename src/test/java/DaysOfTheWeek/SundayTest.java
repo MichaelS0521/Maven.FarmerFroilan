@@ -94,26 +94,20 @@ public class SundayTest {
     @Test
     public void froilandaIsAnEaterTest() {
         Pilot froilanda = new Pilot();
-    Tomato tomato = new Tomato();
-    Egg egg = new Egg();
-    EarCorn earCorn = new EarCorn();
+        Tomato tomato = new Tomato();
+        Egg egg = new Egg();
+        EarCorn earCorn = new EarCorn();
 
         froilanda.eat(earCorn);
         froilanda.eat(tomato);
         froilanda.eat(egg);
-//is this a variable or method?
+        //is this a variable or method?
         Assert.assertTrue(froilanda.hasEaten);
     }
 
     @Test
     public void froilanIsABotanist() {
         Farmer froilan = new Farmer();
-//        CropRow cropRow = new CropRow();
-//        Crop cornStalk = new Crop();
-//        froilan.plant(cornStalk, cropRow);
-//
-//        int expectedCropRowSize = 1;
-//        int actualCropRowSize = cropRow.size();
 
         Assert.assertTrue(froilan instanceof Botanist);
     }
@@ -125,17 +119,7 @@ public class SundayTest {
         froilan.plant(tomatoPlant);
 
         Assert.assertTrue(froilan.plant(tomatoPlant));
-
     }
-//        for (int i = 0; i < 12; i++) {
-//            froilan.plant(cropRow.add(tomato));
-//        }
-//
-//        int expectedCropRowSize = 12;
-//        int actualCropRowSize = cropRow.size();
-//
-//        Assert.assertEquals(expectedCropRowSize, actualCropRowSize);
-//    }
 
     @Test
     public void froilanPlantsCornStalkTest() {
@@ -144,15 +128,6 @@ public class SundayTest {
         froilan.plant(cornStalk);
 
         Assert.assertTrue(froilan.plant(cornStalk));
-
-//        for (int i = 0; i < 12; i++) {
-//            froilan.plant(cropRow.add(cornStalk));
-//        }
-//
-//        int expectedCropRowSize = 12;
-//        int actualCropRowSize = cropRow.size();
-//
-//        Assert.assertEquals(expectedCropRowSize, actualCropRowSize);
     }
 
     @Test
