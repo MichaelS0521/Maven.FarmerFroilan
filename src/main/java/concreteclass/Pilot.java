@@ -16,22 +16,20 @@ public class Pilot extends Person implements Rider, Aircraft{
     }
 
 
-    @Override
-    public void mount() {
-
-    }
-
-    @Override
-    public void dismount() {
-
-    }
-
-    @Override
-    public void addFarmHouse(FarmHouse farmHouse) {
-
-    }
-
     public void eat(Edible edible) {
         hasEaten = true;
     }
+
+    @Override
+    public boolean mount() {
+        return true;
+
+    }
+
+    @Override
+    public boolean dismount() {
+return true;
+    }
+
+
 }

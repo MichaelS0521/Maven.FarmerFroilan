@@ -29,4 +29,13 @@ public class TestChicken {
         chicken.setFertilized(false);
         Assert.assertFalse("Chicken should not be fertilized", chicken.isFertilized());
     }
+
+    @Test
+    public void eatTest(){
+        Chicken chicken = new Chicken("Malo");
+        Tomato tomato = new Tomato();
+        chicken.eat(tomato);
+        Assert.assertTrue(chicken.hasEaten);
+    }
+//ds
 }

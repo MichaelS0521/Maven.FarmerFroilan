@@ -14,18 +14,13 @@ public class Farmer extends Person implements Botanist, Rider {
     public boolean hasEaten = false;
 
     @Override
-    public void mount() {
-
+    public boolean mount() {
+return true;
     }
 
     @Override
-    public void dismount() {
-
-
-    }
-
-    @Override
-    public void addFarmHouse(FarmHouse farmHouse) {
+    public boolean dismount() {
+return true;
 
     }
 

@@ -2,9 +2,9 @@ package Interface;
 
 public interface Rider { //generic
 
-    void mount();
+    boolean mount();
 
-    void dismount();
+    boolean dismount();
 
 
 }

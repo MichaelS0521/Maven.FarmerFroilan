@@ -33,6 +33,14 @@ public class HorseTest {
         Assert.assertTrue(horse.hasEaten);
     }
 
+    @Test
+    public void makesNoiseTest(){
+        Horse horse = new Horse("Noise");
+
+
+        Assert.assertEquals("Noise", horse.makesNoise());
+    }
+
 
 
 

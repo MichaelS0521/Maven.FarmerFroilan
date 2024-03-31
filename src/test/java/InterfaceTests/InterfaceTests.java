@@ -83,5 +83,14 @@ public class InterfaceTests {
     }
 
 
+    @Test
+    public void testInterfaces10(){
+
+        Egg egg = new Egg();
+
+        Assert.assertTrue(egg instanceof Edible);
+    }
+
+
 
 }
