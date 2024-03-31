@@ -14,9 +14,6 @@ import java.util.List;
 public class TestStable {
     @Test
     public void addHorseToStableTest() {
-
-
-
         Horse bojack = new Horse("mimi");
 
         Stables stable = new Stables();

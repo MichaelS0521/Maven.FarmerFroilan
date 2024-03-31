@@ -15,6 +15,9 @@ public class FarmVehicle implements Rideable {
         public boolean contains (Object vehicle){
             return farmVehicle.contains(vehicle);
         }
+        public int size() {
+            return farmVehicle.size();
+        }
 
     @Override
     public boolean ride() {
