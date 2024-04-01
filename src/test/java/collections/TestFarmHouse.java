@@ -46,5 +46,14 @@ import Interface.Edible;
             Assert.assertEquals(expectedSize, actualSize);
         }
 
+
+        @Test
+        public void sizeTest() {
+            FarmHouse farmHouse = new FarmHouse();
+        int expected = 0;
+
+        Assert.assertNotEquals(expected, farmHouse.size());
+
+        }
     }
 
