@@ -16,7 +16,6 @@ public class FarmHouse {
     }
 
     public int size(){
-        System.out.println(farmHouse.size());
         return farmHouse.size();
     }
 

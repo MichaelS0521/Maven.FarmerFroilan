@@ -1,14 +1,14 @@
 package Abstract;
 
 import Interface.Rideable;
+import concreteclass.CropDuster;
 
 import java.util.ArrayList;
 
 
 public class FarmVehicle implements Rideable {
 
-        ArrayList<Object> farmVehicle = new ArrayList<>();
-
+        static ArrayList<Object> farmVehicle = new ArrayList<>();
         public void add(Object vehicle){
             farmVehicle.add(vehicle);
         }

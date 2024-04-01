@@ -1,10 +1,10 @@
 package collections;
 
 import Abstract.Crop;
-import Interface.Botanist;
 import concreteclass.CornStalk;
 import concreteclass.TomatoPlant;
 import concreteclass.Wheat;
+import concreteclass.Wheatplant;
 import org.junit.Assert;
 import org.junit.Test;
 
@@ -122,7 +122,7 @@ public class TestCropRow {
     }
 
     @Test
-    public void cropRowsHaveBeenFertilized() {
+    public void cropRowsOneAndTwoHaveBeenFertilized() {
         TomatoPlant tomatoPlant = new TomatoPlant();
         CropRow<Crop> cropRowOne = new CropRow<>();
         CropRow<Crop> cropRowTwo = new CropRow<>();
@@ -135,6 +135,43 @@ public class TestCropRow {
         cropRowTwo.hasBeenFertilized();
 
         if (cropRowOne.hasBeenFertilized() && cropRowTwo.hasBeenFertilized()){
+            expectedCropRowsFertilized = true;
+        }
+
+        Assert.assertTrue(expectedCropRowsFertilized);
+    }
+
+    @Test
+    public void cropRowsThreeAndFourHaveBeenFertilized() {
+        CornStalk cornStalk = new CornStalk();
+        CropRow<Crop> cropRowThree = new CropRow<>();
+        CropRow<Crop> cropRowFour = new CropRow<>();
+        boolean expectedCropRowsFertilized = false;
+        for (int i = 0; i < 12; i++) {
+            cropRowThree.add(cornStalk);
+            cropRowFour.add(cornStalk);
+        }
+        cropRowThree.hasBeenFertilized();
+        cropRowFour.hasBeenFertilized();
+
+        if (cropRowThree.hasBeenFertilized() && cropRowFour.hasBeenFertilized()){
+            expectedCropRowsFertilized = true;
+        }
+
+        Assert.assertTrue(expectedCropRowsFertilized);
+    }
+
+    @Test
+    public void cropRowsHaveBeenFertilized() {
+        Wheatplant wheatplant = new Wheatplant();
+        CropRow<Crop> cropRowFive = new CropRow<>();
+        boolean expectedCropRowsFertilized = false;
+        for (int i = 0; i < 12; i++) {
+            cropRowFive.add(wheatplant);
+        }
+        cropRowFive.hasBeenFertilized();
+
+        if (cropRowFive.hasBeenFertilized()){
             expectedCropRowsFertilized = true;
         }
 

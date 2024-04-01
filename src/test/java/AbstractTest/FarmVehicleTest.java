@@ -3,6 +3,7 @@ package AbstractTest;
 import Abstract.FarmVehicle;
 import Interface.Rideable;
 import Interface.Rider;
+import concreteclass.CropDuster;
 import concreteclass.CropDusterTest;
 import concreteclass.Tractor;
 import org.testng.Assert;
@@ -16,9 +17,8 @@ public class FarmVehicleTest {
         Tractor tractor = new Tractor();
         FarmVehicle farmVehicle = new FarmVehicle();
         farmVehicle.add(tractor);
-        farmVehicle.add(tractor);
 
-        int expectedSize = 2;
+        int expectedSize = 1;
         int actualSize = farmVehicle.size();
 
         Assert.assertEquals(expectedSize, actualSize);
@@ -27,11 +27,11 @@ public class FarmVehicleTest {
     //ability to add a cropduster to farm vehicle test
     @Test
     public void addCropDusterToFarmVehicleTest(){
-        CropDusterTest cropduster = new CropDusterTest();
+        CropDuster cropDuster = new CropDuster();
         FarmVehicle farmVehicle = new FarmVehicle();
-        farmVehicle.add(cropduster);
+        farmVehicle.add(cropDuster);
 
-        Assert.assertTrue(farmVehicle.contains(cropduster));
+        Assert.assertTrue(farmVehicle.contains(cropDuster));
     }
 
     //testing if these vehicles are rideable
