@@ -1,33 +1,13 @@
 package DaysOfTheWeek;
 
-import Abstract.Crop;
-import Interface.Botanist;
 import Interface.Rideable;
 import Interface.Rider;
-import collections.CropRow;
 import collections.Stables;
 import concreteclass.*;
 import org.junit.Assert;
 import org.junit.Test;
 
-// Froilan and Froilanda (riders)
-// ride each horse (rideable) <array>
-// in each stable <array>
-// Horse (Eater)
-// Horse eats() 3 earCorn
-// Froilan eater()
-// Froilan eats() 1 earCorn, 2 Tomato, 5 Eggs
-// Froilanda eater()
-// Froilanda eats() 2 earCorn, 1 Tomato, 2 Eggs
-
-/* Just for sunday */
-// Froilan is a Botanist()
-// Froilan plants() in a tomato() in a cropRowOne()
-// Froilan plants() in a Corn() in a cropRowTwo()
-// Froilan plants() in a Wheat() in a cropRowThree()
-
-public class SundayTest {
-
+public class SaturdayTest {
     @Test
     public void personRiderTest() {
         Pilot froilanda = new Pilot();
@@ -104,41 +84,4 @@ public class SundayTest {
         //is this a variable or method?
         Assert.assertTrue(froilanda.hasEaten);
     }
-
-    @Test
-    public void froilanIsABotanist() {
-        Farmer froilan = new Farmer();
-
-        Assert.assertTrue(froilan instanceof Botanist);
-    }
-
-    @Test
-    public void froilanPlantsTomatoTest() {
-        Farmer froilan = new Farmer();
-        TomatoPlant tomatoPlant = new TomatoPlant();
-        froilan.plant(tomatoPlant);
-
-        Assert.assertTrue(froilan.plant(tomatoPlant));
-    }
-
-    @Test
-    public void froilanPlantsCornStalkTest() {
-        Farmer froilan = new Farmer();
-        CornStalk cornStalk = new CornStalk();
-        froilan.plant(cornStalk);
-
-        Assert.assertTrue(froilan.plant(cornStalk));
-    }
-
-    @Test
-    public void froilanPlantsWheatTest() {
-        Farmer froilan = new Farmer();
-        Wheatplant wheatplant = new Wheatplant();
-        froilan.plant(wheatplant);
-
-        Assert.assertTrue(froilan.plant(wheatplant));
-    }
-
-
-
 }
